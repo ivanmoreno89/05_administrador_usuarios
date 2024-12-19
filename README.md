@@ -7,44 +7,45 @@ Este proyecto combina **Django** y **FastAPI** para crear una plataforma que ges
 
 ## **Estructura del Proyecto**
 
-\05_administrador_usuarios\
-├── manage.py                      # Archivo principal para comandos de Django
-├── db.sqlite3                     # Base de datos SQLite
-├── main.py                        # Archivo principal de FastAPI
-├── database.py                    # Configuración de conexión a la base de datos
-├── models.py                      # Modelos de FastAPI (SQLAlchemy)
-├── schemas.py                     # Validaciones y esquemas con Pydantic
-├── backend\                       # Configuración principal del proyecto Django
+```plaintext
+05_administrador_usuarios/
+├── manage.py                  # Archivo principal para comandos de Django
+├── db.sqlite3                 # Base de datos SQLite
+├── main.py                    # Archivo principal de FastAPI
+├── database.py                # Configuración de conexión a la base de datos
+├── models.py                  # Modelos de FastAPI (SQLAlchemy)
+├── schemas.py                 # Validaciones y esquemas con Pydantic
+├── backend/                   # Configuración principal del proyecto Django
 │   ├── __init__.py
 │   ├── asgi.py
-│   ├── settings.py                # Configuración principal de Django
-│   ├── urls.py                    # Rutas principales de Django
+│   ├── settings.py            # Configuración principal de Django
+│   ├── urls.py                # Rutas principales de Django
 │   └── wsgi.py
-├── accounts\                      # App de Django para gestión de usuarios y roles
-│   ├── migrations\                # Carpeta generada automáticamente por Django
+├── accounts/                  # App de Django para gestión de usuarios y roles
+│   ├── migrations/            # Carpeta generada automáticamente por Django
 │   │   └── __init__.py
 │   ├── __init__.py
-│   ├── admin.py                   # Configuración del panel de administración de Django
+│   ├── admin.py               # Configuración del panel de administración de Django
 │   ├── apps.py
-│   ├── models.py                  # Modelos de Django
-│   ├── views.py                   # Vistas de Django
-│   └── urls.py                    # Rutas específicas de la app
-├── templates\                     # Plantillas HTML usadas por Django
-│   ├── add_user.html              # Página para agregar un nuevo usuario
-│   ├── admin_user_list.html       # Vista del administrador
-│   ├── confirm_delete_user.html   # Confirmación para eliminar un usuario
-│   ├── edit_user.html             # Página para editar un usuario
-│   ├── login.html                 # Página de inicio de sesión
-│   ├── read_only_user_list.html   # Vista de solo lectura
-│   ├── footer.html                # Footer del proyecto
-│   └── header.html                # Header del proyecto
-├── static\                        # Archivos estáticos (CSS, imágenes)
-│   ├── css\
-│   │   └── styles.css             # Estilos personalizados del proyecto
-│   └── images\
-│       └── logo.png               # Logotipo del proyecto
-└── venv\                          # Entorno virtual de Python
-
+│   ├── models.py              # Modelos de Django
+│   ├── views.py               # Vistas de Django
+│   └── urls.py                # Rutas específicas de la app
+├── templates/                 # Plantillas HTML usadas por Django
+│   ├── add_user.html          # Página para agregar un nuevo usuario
+│   ├── admin_user_list.html   # Vista del administrador
+│   ├── confirm_delete_user.html # Confirmación para eliminar un usuario
+│   ├── edit_user.html         # Página para editar un usuario
+│   ├── login.html             # Página de inicio de sesión
+│   ├── read_only_user_list.html # Vista de solo lectura
+│   ├── footer.html            # Footer del proyecto
+│   └── header.html            # Header del proyecto
+├── static/                    # Archivos estáticos (CSS, imágenes)
+│   ├── css/
+│   │   └── styles.css         # Estilos personalizados del proyecto
+│   └── images/
+│       └── logo.png           # Logotipo del proyecto
+└── venv/                      # Entorno virtual de Python
+```
 
 ---
 
