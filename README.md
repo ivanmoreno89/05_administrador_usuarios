@@ -46,7 +46,6 @@ Este proyecto combina **Django** y **FastAPI** para crear una plataforma que ges
 │       └── logo.png               # Logotipo del proyecto
 └── venv\                          # Entorno virtual de Python
 
-
 ---
 
 ## **Descripción del Proyecto**
