@@ -1,0 +1,47 @@
+{% include 'header.html' %}
+<div style="margin-top: 90px; margin-bottom: 60px;"> <!-- Ajustado para mayor separación -->
+  <main style="margin: 1cm;">
+    <h1 style="text-align: center; color: #0056B3;">Información de Solo Lectura</h1>
+    <table style="width: 100%; border-collapse: collapse; margin: auto;">
+      <thead>
+        <tr style="background-color: #0056B3; color: white;">
+          <th>ID</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Rol</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Superuser</th>
+          <th>Staff</th>
+          <th>Active</th>
+          <th>Date Joined</th>
+          <th>Last Login</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for user in users %}
+        <tr style="background-color: #F9F9F9; border-bottom: 1px solid #CCC;">
+          <td>{{ user.id }}</td>
+          <td>{{ user.username }}</td>
+          <td>{{ user.email }}</td>
+          <td>
+            {% if user.role %}
+              {{ user.role.name }}
+            {% else %}
+              Sin Rol
+            {% endif %}
+          </td>
+          <td>{{ user.first_name }}</td>
+          <td>{{ user.last_name }}</td>
+          <td>{{ user.is_superuser }}</td>
+          <td>{{ user.is_staff }}</td>
+          <td>{{ user.is_active }}</td>
+          <td>{{ user.date_joined }}</td>
+          <td>{{ user.last_login }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </main>
+</div>
+{% include 'footer.html' %}

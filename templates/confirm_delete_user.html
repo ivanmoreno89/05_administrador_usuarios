@@ -1,0 +1,18 @@
+{% include 'header.html' %}
+<div style="margin-top: 70px; margin-bottom: 60px;"> <!-- Ajusta para evitar superposición -->
+  <main style="margin: 1cm;">
+    <h1 style="text-align: center; color: red;">¿Estás seguro de eliminar este usuario?</h1>
+    <p style="text-align: center;">Usuario: {{ user.username }}</p>
+    <p style="text-align: center;">Email: {{ user.email }}</p>
+    <form method="POST" style="text-align: center;">
+      {% csrf_token %}
+      <div style="display: flex; justify-content: center; gap: 10px;">
+        <button type="submit" class="delete-btn">Confirmar Eliminación</button>
+        <a href="{% url 'admin_user_list' %}" style="text-decoration: none;">
+          <button type="button" class="cancel-btn">Cancelar</button>
+        </a>
+      </div>
+    </form>
+  </main>
+</div>
+{% include 'footer.html' %}

@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F0F0F0;
+}
+
+/* Header y Footer */
+header, footer {
+  background-color: #0056B3;
+  color: white;
+  padding: 10px 2cm; /* Márgenes internos */
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+header {
+  top: 0;
+  height: 70px; /* Altura fija para el header */
+}
+
+footer {
+  bottom: 0;
+  height: 60px; /* Altura fija para el footer */
+  text-align: center;
+}
+
+/* Espaciado del Contenido Principal */
+main {
+  padding-top: 80px; /* Espacio debajo del header */
+  padding-bottom: 70px; /* Espacio encima del footer */
+  margin: 1cm;
+}
+
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #CCC;
+}
+
+table th {
+  background-color: #0056B3;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #F9F9F9;
+}
+
+/* Botones */
+button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+button.edit-btn {
+  background-color: #28A745;
+  color: white;
+}
+
+button.edit-btn:hover {
+  background-color: #218838;
+}
+
+button.delete-btn {
+  background-color: #DC3545;
+  color: white;
+}
+
+button.delete-btn:hover {
+  background-color: #C82333;
+}
+
+/* Formularios */
+form {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border: 1px solid #CCC;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 10px 15px; /* Margen interno uniforme */
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  background-color: #0056B3;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #003D80;
+}
+
+/* Login Card */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 140px); /* Excluye header y footer */
+}
+
+.login-card {
+  background-color: #FFFFFF;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-card h1 {
+  margin-bottom: 20px;
+  color: #0056B3;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+/* Reset Password Link */
+.reset-password {
+  color: #0056B3;
+  text-decoration: none;
+}
+
+.reset-password:hover {
+  text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  header, footer {
+    padding: 10px 1cm;
+  }
+
+  main {
+    padding-top: 80px; /* Ajusta el espacio del header */
+    padding-bottom: 70px; /* Ajusta el espacio del footer */
+    margin: 0.5cm;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  table th, table td {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+}

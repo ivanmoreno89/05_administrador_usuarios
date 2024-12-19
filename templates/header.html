@@ -1,0 +1,20 @@
+<header style="background-color: #0056B3; padding: 10px; color: white; display: flex; align-items: center; justify-content: space-between; position: fixed; top: 0; width: 100%; z-index: 1000;">
+    <!-- Logo y Título -->
+    <div style="display: flex; align-items: center; margin-left: 1cm;">
+        <a href="/" style="text-decoration: none; color: white; display: flex; align-items: center;">
+            <img src="/static/images/logo.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+            <h1 style="font-size: 1.5rem; font-weight: bold;">Administrador de Usuarios</h1>
+        </a>
+    </div>
+    <!-- Botón de Cerrar Sesión -->
+    {% if request.user.is_authenticated %}
+    <div style="margin-right: 1cm;">
+        <form action="{% url 'user_logout' %}" method="POST" style="margin: 0;">
+            {% csrf_token %}
+            <button type="submit" style="background-color: #DC3545; color: white; border: none; padding: 8px 15px; border-radius: 5px; font-size: 0.9rem; cursor: pointer;">
+                Cerrar Sesión
+            </button>
+        </form>
+    </div>
+    {% endif %}
+</header>

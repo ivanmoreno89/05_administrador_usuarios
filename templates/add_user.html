@@ -1,0 +1,49 @@
+{% include 'header.html' %}
+<div style="margin-top: 90px; margin-bottom: 60px;"> <!-- Ajustado para mayor separación -->
+  <main style="margin: 1cm;">
+    <h1 style="text-align: center; color: #0056B3;">Información de Nuevo Usuario</h1>
+    {% if error %}
+    <p style="color: red; text-align: center;">{{ error }}</p>
+    {% endif %}
+    <form method="POST" style="max-width: 500px; margin: auto; padding: 20px; background-color: #F9F9F9; border: 1px solid #CCC; border-radius: 10px;">
+      {% csrf_token %}
+      <!-- Campo Username -->
+      <label for="username" style="display: block; margin-bottom: 5px; font-weight: bold;">Username</label>
+      <input type="text" id="username" name="username" required style="width: 100%; padding: 10px 15px; border: 1px solid #CCC; border-radius: 5px; margin-bottom: 15px;">
+
+      <!-- Campo Email -->
+      <label for="email" style="display: block; margin-bottom: 5px; font-weight: bold;">Email</label>
+      <input type="email" id="email" name="email" required style="width: 100%; padding: 10px 15px; border: 1px solid #CCC; border-radius: 5px; margin-bottom: 15px;">
+
+      <!-- Campo Password -->
+      <label for="password" style="display: block; margin-bottom: 5px; font-weight: bold;">Password</label>
+      <input type="password" id="password" name="password" required style="width: 100%; padding: 10px 15px; border: 1px solid #CCC; border-radius: 5px; margin-bottom: 15px;">
+
+      <!-- Campo First Name -->
+      <label for="first_name" style="display: block; margin-bottom: 5px; font-weight: bold;">First Name</label>
+      <input type="text" id="first_name" name="first_name" style="width: 100%; padding: 10px 15px; border: 1px solid #CCC; border-radius: 5px; margin-bottom: 15px;">
+
+      <!-- Campo Last Name -->
+      <label for="last_name" style="display: block; margin-bottom: 5px; font-weight: bold;">Last Name</label>
+      <input type="text" id="last_name" name="last_name" style="width: 100%; padding: 10px 15px; border: 1px solid #CCC; border-radius: 5px; margin-bottom: 15px;">
+
+      <!-- Campo Role ID -->
+      <label for="role_id" style="display: block; margin-bottom: 5px; font-weight: bold;">Role</label>
+      <select id="role_id" name="role_id" required style="width: 100%; padding: 10px 15px; border: 1px solid #CCC; border-radius: 5px; margin-bottom: 15px;">
+        <option value="">Seleccione un Rol</option>
+        {% for role in roles %}
+        <option value="{{ role.id }}">{{ role.name }}</option>
+        {% endfor %}
+      </select>
+
+      <!-- Botones de Acción -->
+      <div style="display: flex; justify-content: space-between;">
+        <button type="submit" class="submit-btn" style="flex: 1; margin-right: 10px;">Registrar Usuario</button>
+        <a href="{% url 'admin_user_list' %}" style="text-decoration: none; flex: 1;">
+          <button type="button" class="cancel-btn">Cancelar</button>
+        </a>
+      </div>
+    </form>
+  </main>
+</div>
+{% include 'footer.html' %}
