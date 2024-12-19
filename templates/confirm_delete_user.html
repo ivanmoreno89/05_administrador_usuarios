@@ -1,7 +1,7 @@
 {% include 'header.html' %}
-<div style="margin-top: 70px; margin-bottom: 60px;"> <!-- Ajusta para evitar superposición -->
+<div style="margin-top: 90px; margin-bottom: 60px;"> <!-- Ajustado para mayor separación -->
   <main style="margin: 1cm;">
-    <h1 style="text-align: center; color: red;">¿Estás seguro de eliminar este usuario?</h1>
+    <h1 style="text-align: center; color: red; margin-top: 5mm;">¿Estás seguro de eliminar este usuario?</h1> <!-- Ajustado el margen superior -->
     <p style="text-align: center;">Usuario: {{ user.username }}</p>
     <p style="text-align: center;">Email: {{ user.email }}</p>
     <form method="POST" style="text-align: center;">
