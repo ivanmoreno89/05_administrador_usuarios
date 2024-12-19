@@ -70,6 +70,8 @@ El frontend utiliza Django para proporcionar una interfaz gráfica que incluye:
 - **Vistas de administrador y solo lectura separadas:** Página para ver y gestionar usuarios registrados o visualizar en el caso de usuarios de solo lectura.
 - **Panel de administración:** Visualización para creación, edición y eliminación de usuarios de acuerdo con el rol de ejecución.
 
+---
+
 ## **Requerimientos de la Base de Datos**
 
 La base de datos utiliza SQLite y está diseñada para almacenar información sobre usuarios y roles. Los modelos principales son:
@@ -106,7 +108,6 @@ La base de datos utiliza SQLite y está diseñada para almacenar información so
 
 ## **Requisitos del Proyecto**
 
-### **Tecnologías utilizadas:**
 - Python 3.9
 - Django
 - FastAPI
@@ -118,47 +119,28 @@ La base de datos utiliza SQLite y está diseñada para almacenar información so
 
 Detalle completo en el archivo requirements.txt
 
-### **Capturas del proyecto**
-#### **Visualización desde PC**
+---
 
-- **Inicio de sesión**
+### **Capturas del proyecto**
+
+A continuación se muestran algunas capturas del proyecto:
+
+- **Inicio de sesión desde PC:**
+
 ![alt text](login.jpg)
 
-- **Vista de solo lectura**
-![alt text](vista_solo_lectura.jpg)
-
-- **Vista de administrador**
-![alt text](vista_administrador.jpg)
-
-- **Vista de creación de usuario**
-![alt text](crear_usuario.jpg)
-
-- **Vista de edición de usuario**
-![alt text](editar_usuario.jpg)
-
-- **Vista de eliminación de usuario**
-![alt text](eliminar_usuario.jpg)
-
-#### **Visualización desde movil**
-
-- **Inicio de sesión**
 ![alt text](login(movil).jpg)
 
-- **Vista de solo lectura**
-![alt text](vista_solo_lectura(movil).jpg)
+- **Vista de solo lectura:**
 
-- **Vista de administrador**
-![alt text](vista_administrador(movil).jpg)
+![alt text](vista_solo_lectura.jpg)
 
-- **Vista de creación de usuario**
-![alt text](crear_usuario(movil).jpg)
+- **Vista de administrador:**
 
-- **Vista de edición de usuario**
-![alt text](editar_usuario(movil).jpg)
+![alt text](vista_administrador.jpg)
 
-- **Vista de eliminación de usuario**
-![alt text](eliminar_usuario(movil).jpg)
+- **Vista de creación de usuario:**
 
-## **Contacto**
+![alt text](crear_usuario.jpg)
 
-Para más información o contribuciones, contacta al equipo de desarrollo en [correo@ejemplo.com](mailto:correo@ejemplo.com).
+---
