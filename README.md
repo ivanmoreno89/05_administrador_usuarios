@@ -119,24 +119,45 @@ La base de datos utiliza SQLite y está diseñada para almacenar información so
 Detalle completo en el archivo requirements.txt
 
 ### **Capturas del proyecto**
+#### **Visualización desde PC**
 
-- Inicio de sesión
-![alt text](login(movil).jpg) ![alt text](login.jpg)
+- **Inicio de sesión**
+![alt text](login.jpg)
 
-- Vista de solo lectura
-![alt text](vista_solo_lectura(movil).jpg) ![alt text](vista_solo_lectura.jpg)
+- **Vista de solo lectura**
+![alt text](vista_solo_lectura.jpg)
 
-- Vista de administrador
-![alt text](vista_administrador(movil).jpg) ![alt text](vista_administrador.jpg)
+- **Vista de administrador**
+![alt text](vista_administrador.jpg)
 
-- Vista de creación de usuario
-![alt text](crear_usuario(movil).jpg) ![alt text](crear_usuario.jpg)
+- **Vista de creación de usuario**
+![alt text](crear_usuario.jpg)
 
-- Vista de edición de usuario
-![alt text](editar_usuario(movil).jpg) ![alt text](editar_usuario.jpg)
+- **Vista de edición de usuario**
+![alt text](editar_usuario.jpg)
 
-- Vista de eliminación de usuario
-![alt text](eliminar_usuario(movil).jpg) ![alt text](eliminar_usuario.jpg)
+- **Vista de eliminación de usuario**
+![alt text](eliminar_usuario.jpg)
+
+#### **Visualización desde movil**
+
+- **Inicio de sesión**
+![alt text](login(movil).jpg)
+
+- **Vista de solo lectura**
+![alt text](vista_solo_lectura(movil).jpg)
+
+- **Vista de administrador**
+![alt text](vista_administrador(movil).jpg)
+
+- **Vista de creación de usuario**
+![alt text](crear_usuario(movil).jpg)
+
+- **Vista de edición de usuario**
+![alt text](editar_usuario(movil).jpg)
+
+- **Vista de eliminación de usuario**
+![alt text](eliminar_usuario(movil).jpg)
 
 ## **Contacto**
 
