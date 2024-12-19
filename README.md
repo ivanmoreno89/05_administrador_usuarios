@@ -7,7 +7,6 @@ Este proyecto combina **Django** y **FastAPI** para crear una plataforma que ges
 
 ## **Estructura del Proyecto**
 
-
 \05_administrador_usuarios\
 ├── manage.py                      # Archivo principal para comandos de Django
 ├── db.sqlite3                     # Base de datos SQLite
@@ -45,6 +44,7 @@ Este proyecto combina **Django** y **FastAPI** para crear una plataforma que ges
 │   └── images\
 │       └── logo.png               # Logotipo del proyecto
 └── venv\                          # Entorno virtual de Python
+
 
 ---
 
